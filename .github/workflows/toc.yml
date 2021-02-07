@@ -11,6 +11,6 @@ jobs:
     runs-on: Ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - run: date > hello.txt
+      - run: npx doctoc doc/JSON_INFO.md
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
