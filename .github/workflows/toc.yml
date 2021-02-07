@@ -1,0 +1,15 @@
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - 'doc/JSON_INFO.md'
+name: TOC Generator
+jobs:
+  generateTOC:
+    name: Update the table of contents
+    runs-on: Ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
