@@ -4,6 +4,7 @@
 
 - [Fizz](#fizz)
 - [Buzz](#buzz)
+- [100](#100)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
